@@ -1,0 +1,1024 @@
+/*=====================================================
+            REALISATIONS.CSS
+            PARTIE 1
+======================================================*/
+
+
+/*==============================
+        HERO
+===============================*/
+
+.portfolio-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(rgba(6,36,71,.82),rgba(6,36,71,.82)),
+    url("../images/realisations/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.portfolio-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    border-radius:50%;
+
+    background:rgba(62,132,196,.12);
+
+    top:-250px;
+
+    right:-180px;
+
+    filter:blur(30px);
+
+}
+
+.portfolio-hero .container{
+
+    position:relative;
+
+    z-index:2;
+    
+
+}
+
+.portfolio-hero span{
+
+    color:#57A5F5;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+}
+
+.portfolio-hero h1{
+
+    color:#fff;
+
+    font-size:4.5rem;
+
+    line-height:1.15;
+
+    margin:25px 0;
+
+}
+
+.portfolio-hero p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    color:#d9e4ef;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/*==============================
+        INTRO
+===============================*/
+
+.portfolio-intro{
+
+    padding:120px 0 40px;
+
+    background:#ffffff;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+}
+
+.section-title span{
+
+    color:#3E84C4;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+    text-align: center;
+
+}
+
+.section-title h2{
+
+    margin:20px 0;
+
+    color:#062447;
+
+    font-size:3rem;
+    
+    text-align: center;
+
+}
+
+.section-title p{
+
+    max-width:720px;
+    width:100%;
+    margin:0 auto !important;
+    text-align:center !important;
+    color:#68778a;
+    line-height:1.9;
+
+}
+
+
+
+/*==============================
+        FILTER
+===============================*/
+
+.portfolio-filter{
+
+    padding:40px 0 80px;
+
+}
+
+.portfolio-filter .container{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+    
+
+}
+
+.filter-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:16px 34px;
+
+    border-radius:50px;
+
+    background:#edf3f8;
+
+    color:#062447;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.filter-btn:hover{
+
+    background:#3E84C4;
+
+    color:#fff;
+
+}
+
+.filter-btn.active{
+
+    background:#062447;
+
+    color:#fff;
+
+}
+
+
+
+/*==============================
+        GALLERY
+===============================*/
+
+.portfolio{
+
+    padding-bottom:120px;
+
+}
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.portfolio-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:0 25px 45px rgba(0,0,0,.08);
+
+    cursor:pointer;
+
+}
+
+.portfolio-item img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    transition:.7s;
+
+}
+
+.portfolio-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.portfolio-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    flex-direction:column;
+
+    padding:35px;
+
+    background:linear-gradient(
+
+    transparent,
+
+    rgba(0,0,0,.90)
+
+    );
+
+    opacity:0;
+
+    transition:.45s;
+
+}
+
+.portfolio-item:hover .portfolio-content{
+
+    opacity:1;
+
+}
+
+.portfolio-content span{
+
+    color:#57A5F5;
+
+    margin-bottom:12px;
+
+}
+
+.portfolio-content h3{
+
+    color:#fff;
+
+    margin-bottom:8px;
+
+}
+
+.portfolio-content p{
+
+    color:#d8e3ef;
+
+    margin-bottom:25px;
+
+}
+
+.portfolio-content a{
+
+    display:inline-flex;
+
+    width:max-content;
+
+    padding:12px 26px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    background:#3E84C4;
+
+    color:#fff;
+
+    transition:.3s;
+
+}
+
+.portfolio-content a:hover{
+
+    background:#fff;
+
+    color:#062447;
+
+}
+
+/*=====================================================
+        PROJET VEDETTE
+======================================================*/
+
+.featured-project{
+
+    padding:140px 0;
+
+    background:#F7FAFD;
+
+}
+
+.featured-container{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.featured-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.featured-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.7s;
+
+}
+
+.featured-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.featured-content span{
+
+    color:#3E84C4;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+}
+
+.featured-content h2{
+
+    font-size:3rem;
+
+    color:#062447;
+
+    margin:20px 0;
+
+}
+
+.featured-content p{
+
+    color:#6A7788;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.project-info{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:45px;
+
+}
+
+.project-info div{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+}
+
+.project-info h3{
+
+    color:#3E84C4;
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.project-info p{
+
+    margin:0;
+
+    color:#68778A;
+
+}
+
+
+
+/*=====================================================
+                STATISTIQUES
+======================================================*/
+
+.statistics{
+
+    padding:120px 0;
+
+    background:#062447;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.stat-box{
+
+    text-align:center;
+
+    padding:45px 20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    transition:.35s;
+
+}
+
+.stat-box:hover{
+
+    transform:translateY(-10px);
+
+    background:#3E84C4;
+
+}
+
+.stat-box h2{
+
+    font-size:3.5rem;
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.stat-box p{
+
+    color:#D7E2EC;
+
+}
+
+
+
+/*=====================================================
+                    CTA
+======================================================*/
+
+.cta{
+
+    padding:140px 0;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(rgba(6,36,71,.92),rgba(6,36,71,.92)),
+    url("../images/realisations/cta.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.cta span{
+
+    color:#57A5F5;
+
+    letter-spacing:3px;
+
+    font-weight:600;
+
+}
+
+.cta h2{
+
+    color:#fff;
+
+    font-size:3rem;
+
+    margin:25px 0;
+
+}
+
+.cta p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#D8E2EB;
+
+    margin-bottom:40px;
+
+    line-height:1.8;
+
+}
+
+
+
+/*=====================================================
+                FOOTER
+======================================================*/
+
+.footer{
+
+    background:#04192F;
+
+    color:#fff;
+
+    padding:90px 0 0;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:60px;
+
+}
+
+.footer img{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+
+.footer h3{
+
+    margin-bottom:20px;
+
+}
+
+.footer p{
+
+    color:#C6D0DB;
+
+    line-height:1.8;
+
+}
+
+.footer a{
+
+    display:block;
+
+    color:#C6D0DB;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#3E84C4;
+
+    padding-left:8px;
+
+}
+
+.footer-bottom{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    color:#9DB1C6;
+
+}
+
+
+
+/*=====================================================
+                ANIMATIONS
+======================================================*/
+
+.portfolio-item,
+.featured-container,
+.stat-box{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:.8s ease;
+
+}
+
+.portfolio-item.show,
+.featured-container.show,
+.stat-box.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+/*=====================================================
+                BACK TO TOP
+======================================================*/
+
+.back-top{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:#3E84C4;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:999;
+
+}
+
+.back-top.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-top:hover{
+
+    background:#470643;
+
+    transform:translateY(-6px);
+
+}
+
+
+
+/*=====================================================
+                RESPONSIVE
+======================================================*/
+
+@media(max-width:1200px){
+
+.portfolio-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.featured-container{
+
+grid-template-columns:1fr;
+
+}
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:992px){
+
+.portfolio-hero h1{
+
+font-size:3rem;
+
+}
+
+.portfolio-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.project-info{
+
+grid-template-columns:1fr;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer img{
+
+margin:auto auto 25px;
+
+}
+
+.cta h2{
+
+font-size:2.3rem;
+
+}
+
+.section-title h2{
+
+font-size:2.4rem;
+
+}
+
+}
+
+
+
+@media(max-width:576px){
+
+.portfolio-hero{
+
+min-height:80vh;
+
+padding:120px 0 80px;
+
+}
+
+.portfolio-hero h1{
+
+font-size:2.2rem;
+
+}
+
+.portfolio-hero p{
+
+font-size:1rem;
+
+}
+
+.featured-content h2{
+
+font-size:2rem;
+
+}
+
+.filter-btn{
+
+width:100%;
+
+}
+
+.project-info{
+
+gap:18px;
+
+}
+
+.back-top{
+
+right:20px;
+
+bottom:20px;
+
+}
+
+}
+
+
+
+
+/*=====================================================
+        CORRECTION ALIGNEMENT DES TEXTES
+======================================================*/
+
+.section-title,
+.hero-content,
+.about-content,
+.service-card,
+.advantage-card,
+.process-card,
+.project-card,
+.portfolio-content,
+.featured-content,
+.testimonial-card,
+.contact-info,
+.contact-form,
+.cta,
+.footer,
+.footer-grid,
+.footer-bottom{
+
+    text-align:center;
+
+}
+
+/* Centre également les paragraphes */
+
+.section-title p,
+.hero-content p,
+.about-content p,
+.service-card p,
+.advantage-card p,
+.process-card p,
+.project-card p,
+.portfolio-content p,
+.featured-content p,
+.testimonial-card p,
+.contact-info p,
+.contact-form p,
+.cta p{
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* Centre les titres */
+
+.section-title h1,
+.section-title h2,
+.section-title h3,
+.hero-content h1,
+.hero-content h2,
+.about-content h2,
+.featured-content h2,
+.cta h2{
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* Centre les boutons */
+
+.hero-buttons,
+.cta,
+.contact-form form{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* Centre les cartes */
+
+.service-card,
+.advantage-card,
+.process-card,
+.project-card,
+.stat-box,
+.info-card{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
